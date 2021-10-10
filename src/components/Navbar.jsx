@@ -11,27 +11,27 @@ const Navbar = () => {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <NavLink to="/home" activeClassName="active-class">
+          <NavLink exact to="/" activeClassName="active-class">
             Home
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" activeClassName="active-class">
+          <NavLink exact to="/about" activeClassName="active-class">
             About
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/resume" activeClassName="active-class">
+          <NavLink exact to="/resume" activeClassName="active-class">
             Resume
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/portfolio" activeClassName="active-class">
+          <NavLink exact to="/portfolio" activeClassName="active-class">
             Portfolio
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/blogs" activeClassName="active-class">
+          <NavLink exact to="/blogs" activeClassName="active-class">
             Blogs
           </NavLink>
         </li>
@@ -77,8 +77,11 @@ const NavigationStyled = styled.div`
       display: block;
       a {
         display: block;
-        padding: 0.2rem 0;
+        padding: 0.3rem 0;
         position: relative;
+        z-index: 10;
+        font-weight: 600;
+        letter-spacing: 1px;
         &:hover {
           cursor: pointer;
         }
