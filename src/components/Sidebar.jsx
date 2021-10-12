@@ -10,7 +10,7 @@ const Sidebar = () => {
   );
 };
 const SideBar = styled.div`
-  width: 16.3rem;
+  width: 15rem;
   height: 100vh;
   background-color: var(--sidebar-dark-color);
   position: fixed;

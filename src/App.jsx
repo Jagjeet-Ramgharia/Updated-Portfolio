@@ -15,12 +15,12 @@ function App() {
       <div className="App">
         <Sidebar />
         <MainContentStyled>
-          <div className="lines">
+          {/* <div className="lines">
             <div className="line-1"></div>
             <div className="line-2"></div>
             <div className="line-3"></div>
             <div className="line-4"></div>
-          </div>
+          </div> */}
           <Switch>
             <Route exact path="/">
               <HomePage />
@@ -49,7 +49,7 @@ function App() {
 
 const MainContentStyled = styled.main`
   position: relative;
-  margin-left: 16.3rem;
+  margin-left: 15rem;
   min-height: 100vh;
   /* background-color: red; */
   .lines {
@@ -58,6 +58,7 @@ const MainContentStyled = styled.main`
     min-height: 100%;
     display: flex;
     justify-content: space-evenly;
+
     .line-1,
     .line-2,
     .line-3,
@@ -65,6 +66,7 @@ const MainContentStyled = styled.main`
       width: 1px;
       min-height: 100vh;
       background-color: var(--border-color);
+      /* z-index: -1; */
     }
   }
 `;

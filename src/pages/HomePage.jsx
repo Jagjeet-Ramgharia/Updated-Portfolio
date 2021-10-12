@@ -11,7 +11,7 @@ const HomePage = () => {
       </div>
       <div className="typography">
         <h1>
-          Hi I'm <span>Jagjeet</span>
+          Hi I'm <span>Jagjeet Singh</span>
         </h1>
         <p>
           I am a web developer with enthusiasm and focused on frontend
@@ -54,8 +54,13 @@ const HomePageStyled = styled.header`
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     p {
       font-size: 1rem;
+      letter-spacing: 1px;
       text-align: center;
     }
     .icons {

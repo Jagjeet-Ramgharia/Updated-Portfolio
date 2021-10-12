@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import me from "../img/me2.png";
+import me2 from "../img/me2.png";
 
 const Navbar = () => {
   return (
     <NavigationStyled>
       <div className="avatar">
-        <img src={me} alt="" />
+        <img src={me2} alt="" />
       </div>
       <ul className="nav-items">
         <li className="nav-item">
@@ -61,6 +61,7 @@ const NavigationStyled = styled.div`
     border-bottom: 1px solid var(--border-color);
     text-align: center;
     padding: 5px 0;
+    overflow: hidden;
     img {
       width: 80%;
       border-radius: 50%;

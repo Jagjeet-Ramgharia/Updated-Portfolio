@@ -17,6 +17,7 @@ const PrimaryButtonStyle = styled.a`
   width: 50%;
   position: relative;
   transition: all 0.5s ease-in-out;
+  border-radius: 5px;
   &::after {
     content: "";
     position: absolute;
